@@ -16,9 +16,7 @@ unpaid = amount
 for value in nominal_value:
     while unpaid >= 0:
         n = int(unpaid/value)
-        print(n)
         unpaid -= n * value
-        print(unpaid)
         if n > 0:
             quantity_value.append(n)
             break
@@ -30,7 +28,6 @@ for value in nominal_value:
         break
 
 
-print(quantity_value)
 
 
 def print_result(n, x, amount): # n - quantity, x - value

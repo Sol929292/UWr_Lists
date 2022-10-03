@@ -32,27 +32,65 @@ class Zmienna(Wyrazenie):
         self.name = name
         self.value = value
 
+    def __str__(self):
+        return f"Zmienna({self.name})"
+
 class Stala(Wyrazenie):
     def __init__(self, stala):
         self.stala = stala
 
+    def __str__(self):
+        return f"Stala({self.stala})"
+
 class Dodaj(Wyrazenie):
-    def oblicz(self, x, y):
-        return x + y
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def oblicz(self):
+        return self.x + self.y
+
+    def __str__(self):
+        return f"Dodaj({self.x}, {self.y})"
 
 class Razy(Wyrazenie):
-    def oblicz(self, x, y):
-        return x * y
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def oblicz(self):
+        return self.x * self.y
+
+    def __str__(self):
+        return f"Razy({self.x}, {self.y})"
+
+
 
 # Samples:
 zmienna_x = Zmienna("x", 10)
 print(zmienna_x.name, zmienna_x.value)  # x 10
+print(zmienna_x)                        # Zmienna(x)
 
 zmienna_y = Zmienna("y", 3)
 print(zmienna_y.name, zmienna_y.value)  # y 3
 
 stala_2 = Stala(2)
-print(stala_2.stala)    # 2
-print(stala_2)    # <__main__.Stala object at 0x0000022022C1BD30>
+print(stala_2.stala)                    # 2
+print(stala_2)                          # Stala(2)
 
+dodaj = Dodaj(zmienna_x.value, stala_2.stala)
 
+print(dodaj)                            # Dodaj(10, 2)
+print(dodaj.oblicz())                   # 12
+
+razy = Razy(dodaj.oblicz(), zmienna_y.value)
+print(razy)                            # Razy(12, 3)
+print(razy.oblicz())                   # 36
+
+print("main__________________________________")
+print(f"({zmienna_x.name} + {stala_2.stala}) * {zmienna_y.name} =")
+print(f"({zmienna_x.value} + {stala_2.stala}) * {zmienna_y.value} =")
+
+print(f"{dodaj.oblicz()} * {zmienna_y.value} = {razy.oblicz()}")
+
+print(dodaj, razy, zmienna_x, zmienna_y)

@@ -1,0 +1,35 @@
+Questions
+
+1.Name all data types 
+
+Data types are: integer, float, bool, char, none
+
+2. Name all data structures
+
+Data structures are:
+Python: dictionary, table, tuple, string, bool
+			
+C++: queue, priority queue, dequeue, maps, vector, bool, set, 
+
+3. Please describe what is object oriented programming for nontechnical person
+
+Object oriented programming is a kind of model or pattern that describes real-world problem using objects and interactions between them. 
+It consist of classes that precise properties of created objects using methods and attributes.
+
+Example 1:
+Class is a blueprint of car, it define, that car has four wheels, engine, color and gearbox.
+Object is instances of given blueprint with concrete engine power, blue color and automatic gearbox.
+
+Example 2:
+Class is DNA with instructions how object should looks like and do, whereas Object is real formation. (?)
+
+4. What is a class 
+
+Class:
+It's a blueprint or description for the object. It consist of attributes and methods.
+
+
+5. What is an object
+
+Object:
+It's an instance of the class. Object has unique name.

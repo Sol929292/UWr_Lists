@@ -36,3 +36,42 @@ Object:
 It's an instance of the class. Object has unique name.
 Eg: for class Auto, Mercedes is object of the class.
 
+6.	What’s the difference between class and object
+
+Class							Object
+It's a blueprint or description for the object.		The object is an instance of a class.
+A class is a logical entity				Object is a physical entity
+A class does not allocate memory space.			Object allocates memory space whenever they are created.
+You can declare class only once.			You can create more than one object using a class.
+Example: Car.						Example: Jaguar, BMW, Tesla, etc.
+Class generates objects.				Objects provide life to the class.
+
+7.	Name 4 Object Oriented Programming principles
+
+There are 4 major principles that make an language Object Oriented.
+These are Encapsulation, Data Abstraction, Polymorphism and Inheritance. 
+These are also called as four pillars of Object Oriented Programming.
+
+8.	What is encapsulation
+
+A language mechanism for restricting direct access to some of an object’s components.
+Encapsulation is achieved when each object keeps its state private, inside a class.
+Other objects don’t have direct access to this state.
+
+9.	What is inheritance
+
+Inheritance is a mechanism that allows one class to gain the properties of another class,
+in the same way, that a child inherits some attributes from each of their parents. 
+Inheritance allows programmers to create a new class that reuses the data members and methods of an existing class.
+
+10.	What is abstraction 
+
+Its main goal is to hide unnecessary complex details of code from the user. 
+That enables the user to implement more complex logic on top of the provided abstraction without 
+understanding or even thinking about all the hidden complexity.
+Eg: coffee machine
+You don’t need to know is how the coffee machine is making a fresh cup of coffee.
+You don’t need to know the ideal temperature of the water, preasure or the amount of ground coffee you need to use. 
+Someone else worried about that. You have to only press a button.
+
+
